@@ -1,36 +1,43 @@
-@import "./src/assets/styles/core/variables";
+@import './src/assets/styles/core/variables';
+@import './src/assets/styles/core/mixins';
 
 .logo {
-    display: block;
-    margin-bottom: 70px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  pointer-events: none;
+  opacity: .06;
 
-  //  @include max(500) {
-  //    position: absolute;
-  //    top: 0;
-  //    right: 0;
-  //    bottom: 0;
-  //    left: 0;
-  //    display: flex;
-  //    justify-content: center;
-  //    margin: auto;
-  //    pointer-events: none;
-  //    opacity: .06;
-  //  }
-    &:hover {
-      svg {
-        fill: $highlight;
-      }
-    }
+  @include min(500) {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 70px;
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  &:hover {
     svg {
-      fill: $light;
+      fill: $highlight;
+    }
+  }
+
+  svg {
+    fill: $light;
+    width: 250px;
+    height: 400px;
+    margin-top: 60px;
+    transition: fill .5s;
+
+    @include min(500) {
       width: 50px;
       height: 80px;
-      transition: fill .5s;
-
-  //    @include max(500) {
-  //      width: 250px;
-  //      height: 400px;
-  //      margin-top: 60px;
-  //    }
+      margin-top: 0;
     }
+  }
 }
