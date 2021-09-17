@@ -1,8 +1,11 @@
 import React from 'react';
+import PageHeader from "../../components/PageHeader/PageHeader";
 
 function Works(props) {
   return (
-    <h1>WORKS</h1>
+    <>
+      <PageHeader title="Works"/>
+    </>
   );
 }
 

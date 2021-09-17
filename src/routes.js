@@ -5,11 +5,17 @@ import Blog from "./pages/Blog/Blog";
 import Contacts from "./pages/Contacts/Contacts";
 import NotFound from "./pages/NotFound/NotFound";
 
+import {ReactComponent as Pdf} from './assets/img/icons/home.svg';
+
 const routes = [
   {
     path: '/',
     component: Home,
     exact: true
+  }, {
+    path: '/front-end_developer_Dmitry_Gordienko',
+    component: Pdf,
+    exact: false
   }, {
     path: '/cv',
     component: Cv,

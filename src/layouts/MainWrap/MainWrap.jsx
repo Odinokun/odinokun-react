@@ -4,7 +4,7 @@ import s from './main-wrap.module.scss'
 
 function MainWrap({children}) {
   return (
-    <div className={s.main_wrap} id="main-wrap">
+    <div className={s.wrap}>
       {children}
     </div>
   );

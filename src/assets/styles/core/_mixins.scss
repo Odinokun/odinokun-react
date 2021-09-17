@@ -4,6 +4,12 @@
   }
 }
 
+@mixin print() {
+  @media print {
+    @content;
+  }
+}
+
 // =====  =====
 // ===== OLD MIXINS =====
 // =====  =====
@@ -19,11 +25,6 @@
   }
 }
 
-@mixin print() {
-  @media print {
-    @content;
-  }
-}
 
 // ===== ol style =====
 @mixin counter($var) {

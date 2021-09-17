@@ -1,11 +1,12 @@
 import React from 'react';
+import Button from "../../components/Button/Button";
 
 import s from './home.module.scss'
 
 function Home(props) {
   return (
-    <>
-      <div className={s.index__bg}>
+    <div className={s.wrap}>
+      <div className={s.bg}>
         <svg viewBox="0 0 28.6 45.1">
           <path d="M0.1,0.1h12.7v41.2l-6.4,3.8H0L0.1,0.1L0.1,0.1z M9.1,38.7V4H3.9v37.3L9.1,38.7z"/>
         </svg>
@@ -14,16 +15,14 @@ function Home(props) {
         </svg>
       </div>
 
-      <div className="index__block">
-        <h1 className="index__title">Dmitry Gordienko</h1>
-        <h2 className="index__subtitle">front-end developer</h2>
-        <div className="index__btn">
-          <a className="btn btn--light" href="assets/text/front-end_developer_Dmitry_Gordienko.pdf" target="_blank">
-            Download CV
-          </a>
+      <div className={s.block}>
+        <h1 className={s.title}>Dmitry Gordienko</h1>
+        <h2 className={s.subtitle}>front-end developer</h2>
+        <div className={s.btn}>
+          <Button subClass="light" />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

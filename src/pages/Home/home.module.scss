@@ -1,9 +1,98 @@
-.index__bg {
-  background-color: greenyellow;
+@import './src/assets/styles/core/variables';
+@import './src/assets/styles/core/mixins';
+@import './src/assets/styles/core/keyframes';
+
+
+.wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: $dark;
+  //  .burger__line {
+  //    background-color: $light;
+  //  }
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  pointer-events: none;
 
   svg {
-    fill: blue;
-    width: 40%;
-    max-height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    fill: $light;
+    width: 60vw;
+    height: 90vh;
+    margin: auto;
+    opacity: .08;
+
+    //&:first-child {
+    //  transform: translateX(-100vw);
+    //  animation: .8s leftToCenter ease-in-out .1s forwards;
+    //}
+    //
+    //&:last-child {
+    //  transform: translateX(100vw);
+    //  animation: .8s rightToCenter ease-in-out .1s forwards;
+    //}
   }
+}
+
+.block {
+  position: relative;
+  z-index: 1;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.title {
+  font-family: $teko;
+  font-size: 12vw;
+  line-height: 1;
+  margin: 0;
+  user-select: none;
+  //animation: .7s fadeIn ease 1s forwards;
+  letter-spacing: 3px;
+  //opacity: 0;
+  color: $light;
+
+  @include min(1024) {
+    font-size: 10.5vw;
+  }
+}
+
+.subtitle {
+  font-family: $kaushan;
+  font-size: 5vw;
+  margin: 0 0 50px 0;
+  user-select: none;
+  //animation: .7s fadeIn ease 1.15s forwards;
+  text-align: center;
+  //opacity: 0;
+  color: $light;
+
+  @include min(1024) {
+    font-size: 3vw;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  //animation: .7s fadeIn ease 1.3s forwards;
+  //opacity: 0;
 }

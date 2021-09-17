@@ -4,7 +4,7 @@ import s from './main.module.scss'
 
 function Main({children}) {
   return (
-    <section className={`${s.main} index`}>
+    <section className={s.main}>
       {children}
     </section>
   );
