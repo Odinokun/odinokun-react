@@ -4,7 +4,7 @@ import PageHeader from "../../components/PageHeader/PageHeader";
 function Works(props) {
   return (
     <>
-      <PageHeader title="Works"/>
+      <PageHeader title="My last works"/>
     </>
   );
 }

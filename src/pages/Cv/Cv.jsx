@@ -1,8 +1,11 @@
 import React from 'react';
+import PageHeader from "../../components/PageHeader/PageHeader";
 
 function Cv(props) {
   return (
-    <h1>CV</h1>
+    <>
+      <PageHeader title="My CV"/>
+    </>
   );
 }
 

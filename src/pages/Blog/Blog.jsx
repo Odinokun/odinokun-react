@@ -1,8 +1,11 @@
 import React from 'react';
+import PageHeader from "../../components/PageHeader/PageHeader";
 
 function Blog(props) {
   return (
-    <h1>BLOG </h1>
+    <>
+      <PageHeader title="Blog"/>
+    </>
   );
 }
 
