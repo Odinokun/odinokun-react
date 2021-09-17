@@ -1,4 +1,4 @@
-import {Route, Switch} from "react-router-dom";
+import {Redirect, Route, Switch} from "react-router-dom";
 import routes from "./routes";
 
 import Aside from "./layouts/Aside/Aside";
@@ -21,6 +21,7 @@ function App() {
               key={`${route.path}_${index}`}
             />
           ))}
+          <Redirect to="/404"/>
         </Switch>
       </Main>
     </MainWrap>
