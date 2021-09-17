@@ -1,0 +1,34 @@
+@import "./src/assets/styles/core/variables";
+
+.aside {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90px;
+    height: 100vh;
+    padding-top: 25px;
+    border-right: 1px solid $light;
+    background-color: $dark;
+
+  //  @include max(500) {
+  //    right: 0;
+  //    width: 100%;
+  //    padding-top: 100px;
+  //    transition: transform .5s;
+  //    transform: translateX(-100%);
+  //    border-right: none;
+  //
+  //    will-change: transform;
+  //    &.active {
+  //      transform: translateX(0);
+  //    }
+  //  }
+  //  @include print {
+  //    display: none;
+  //  }
+}

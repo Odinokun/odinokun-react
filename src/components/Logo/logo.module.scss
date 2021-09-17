@@ -1,0 +1,36 @@
+@import "./src/assets/styles/core/variables";
+
+.logo {
+    display: block;
+    margin-bottom: 70px;
+
+  //  @include max(500) {
+  //    position: absolute;
+  //    top: 0;
+  //    right: 0;
+  //    bottom: 0;
+  //    left: 0;
+  //    display: flex;
+  //    justify-content: center;
+  //    margin: auto;
+  //    pointer-events: none;
+  //    opacity: .06;
+  //  }
+    &:hover {
+      svg {
+        fill: $highlight;
+      }
+    }
+    svg {
+      fill: $light;
+      width: 50px;
+      height: 80px;
+      transition: fill .5s;
+
+  //    @include max(500) {
+  //      width: 250px;
+  //      height: 400px;
+  //      margin-top: 60px;
+  //    }
+    }
+}
