@@ -21,10 +21,10 @@
   position: relative;
   z-index: 1;
   display: inline-block;
+  margin: 0;
   user-select: none;
   text-align: center;
   color: $dark;
-
   @include min(768) {
     font-size: 90px;
   }

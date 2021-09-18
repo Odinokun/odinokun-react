@@ -1,0 +1,17 @@
+@import './src/assets/styles/core/variables';
+@import './src/assets/styles/core/mixins';
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  //margin-left: 0;
+  padding-bottom: 100px;
+
+  @include min(1100) {
+    justify-content: flex-start;
+    //width: calc(100% + 30px);
+    //margin-left: -15px;
+  }
+}
