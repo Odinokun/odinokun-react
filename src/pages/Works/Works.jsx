@@ -12,17 +12,17 @@ function Works(props) {
       <PageHeader title="My last works"/>
       <div className={`container ${s.gallery}`}>
         {workItems.map((item, index) => (
-        <WorkItem
-          src = {item.src}
-          alt = {item.alt}
-          link = {item.link}
-          linkTitle = {item.linkTitle}
-          title = {item.title}
-          dateTime = {item.dateTime}
-          dateTimeTitle = {item.dateTimeTitle}
-          badges = {item.badges}
-          key = {`${item.src}_${index}`}
-        />
+          <WorkItem
+            src = {item.src}
+            alt = {item.alt}
+            link = {item.link}
+            linkTitle = {item.linkTitle}
+            title = {item.title}
+            dateTime = {item.dateTime}
+            dateTimeTitle = {item.dateTimeTitle}
+            badges = {item.badges}
+            key = {`${item.src}_${index}`}
+          />
         ))}
       </div>
     </>

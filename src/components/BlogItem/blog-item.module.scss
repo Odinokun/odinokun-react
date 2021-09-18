@@ -1,55 +1,60 @@
-.blog-article {
+@import './src/assets/styles/core/variables';
+@import './src/assets/styles/core/mixins';
+
+.article {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 80px;
 
-  @include max(1020) {
-    flex-direction: column;
+  @include min(1024) {
+    flex-direction: row;
   }
 
   &:nth-child(even) {
-    flex-direction: row-reverse;
-
-    @include max(1020) {
-      flex-direction: column;
+    @include min(1024) {
+      flex-direction: row-reverse;
     }
   }
 }
 
-.blog-article__img {
-  width: calc(50% - 15px);
+.img {
+  width: fit-content;
+  margin-bottom: 25px;
   box-shadow: $box-shadow;
 
-  @include max(1020) {
-    width: fit-content;
-    margin-bottom: 25px;
+  @include min(1024) {
+    width: calc(50% - 15px);
+    margin-bottom: 0;
   }
+
   img {
     display: block;
     width: 100%;
+    max-width: 500px;
     height: 100%;
-
+    margin: 0 auto;
     object-fit: cover;
     object-position: center;
-    @include max(1020) {
-      max-width: 500px;
-      margin: 0 auto;
+
+    @include min(1024) {
+      max-width: 100%;
+      margin: 0;
     }
   }
 }
 
-.blog-article__info {
+.info {
   display: flex;
   flex-direction: column;
-  width: calc(50% - 15px);
+  width: 100%;
 
-  @include max(1020) {
-    width: 100%;
+  @include min(1024) {
+    width: calc(50% - 15px);
   }
 }
 
-.blog-article__title {
+.title {
   font-family: $oswald;
   font-size: 30px;
   display: block;
@@ -58,16 +63,18 @@
   transition: color .5s;
   text-decoration: none;
   color: $dark;
+
   &:hover {
     color: $highlight;
   }
 }
 
-.blog-article__date {
+.date {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
   padding-right: 10px;
+
   svg {
     flex: none;
     fill: $dark;
@@ -75,6 +82,7 @@
     height: 16px;
     margin-right: 10px;
   }
+
   time {
     font-size: 14px;
     font-weight: 400;
@@ -84,10 +92,11 @@
   }
 }
 
-.blog-article__author {
+.author {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
+
   svg {
     flex: none;
     fill: $dark;
@@ -95,6 +104,7 @@
     height: 16px;
     margin-right: 10px;
   }
+
   span {
     font-size: 16px;
     font-weight: 400;
@@ -102,29 +112,28 @@
   }
 }
 
-.blog-article__preview {
+.preview {
+  font-size: 18px;
   display: block;
   padding-bottom: 10px;
   text-decoration: none;
-  p {
-    font-size: 18px;
-    color: $dark;
-  }
+  color: $dark;
 }
 
-.blog-article__tags {
+.tags {
   display: flex;
   flex-wrap: wrap;
   margin-top: auto;
   padding: 0;
 }
 
-.blog-article__tag {
+.tag {
   font-size: 11px;
   font-weight: 700;
+  line-height: 1;
   margin-top: 5px;
   margin-right: 10px;
-  padding: 3px 7px 3px 9px;
+  padding: 5px 7px 3px 9px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: $dark;
