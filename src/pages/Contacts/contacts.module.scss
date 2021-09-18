@@ -1,24 +1,29 @@
+@import './src/assets/styles/core/variables';
+@import './src/assets/styles/core/mixins';
+
 .contacts {
   position: relative;
+  background-color: $dark;
 }
 
-.contacts-map {
+.map {
   min-height: 100vh;
+
   .gmnoprint,
   .gm-fullscreen-control {
     display: none;
   }
 }
 
-.contacts-item {
+.item {
   position: absolute;
   z-index: 1;
   top: 50%;
   left: 50%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 90%;
   max-width: 700px;
   padding: 50px 20px;
@@ -28,120 +33,101 @@
   background-color: $light;
 }
 
-.contacts-item__title {
-  margin-bottom: 70px;
 
-  @include max(767) {
-    margin-bottom: 40px;
-  }
-}
-
-.contact-links {
+.links {
   display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
+  padding-top: 70px;
 
-  @include max(767) {
-    flex-direction: column;
-    align-items: center;
+  @include min(768) {
+    flex-direction: row;
   }
 }
 
-.contact-links__title {
-  margin-bottom: 25px;
-}
-
-.contact-links__item {
-  min-width: 220px;
+.links__item {
+  min-width: 250px;
   padding: 0 10px 20px 10px;
 
-  @include max(767) {
-    min-width: 250px;
-
-    &:first-child {
-      .contact-links__list {
-        display: flex;
-        justify-content: space-between;
-      }
-    }
-  }
-  @include max(500) {
+  @include min(768) {
     min-width: 220px;
   }
 }
 
-.contact-links__title {
-  font-size: 30px;
+.links__title {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 25px;
 
-  @include max(500) {
-    font-size: 24px;
+  @include min(500) {
+    font-size: 30px;
   }
 }
 
-.contact-links__list {
+.links__list {
   margin: 0;
   padding: 0;
+
   li {
     margin-bottom: 15px;
     list-style: none;
   }
 }
 
-.contact-links__link {
+.links__link {
   display: flex;
   align-items: center;
   text-decoration: none;
+
   &:hover {
     svg {
       fill: $highlight;
       animation: 1.2s Shake ease-in-out infinite;
     }
+
     span {
       color: $highlight;
     }
   }
+
   svg {
     flex: none;
     fill: $dark;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     margin-right: 15px;
     transition: fill .5s;
 
-    @include max(500) {
-      width: 25px;
-      height: 25px;
+    @include min(500) {
+      width: 30px;
+      height: 30px;
     }
   }
+
   span {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 1;
     display: inline-block;
     transition: color .5s;
     white-space: nowrap;
     color: $dark;
 
-    @include max(500) {
-      font-size: 16px;
+    @include min(500) {
+      font-size: 18px;
     }
   }
 }
 
-.contact-links__link--in {
-  svg {
-    height: 32px;
-    padding-bottom: 5px;
-  }
-}
-
-.contacts-item__btn {
+.btn {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 0;
 
-  @include max(500) {
-    padding-top: 0;
+  @include min(500) {
+    padding-top: 20px;
   }
 }
