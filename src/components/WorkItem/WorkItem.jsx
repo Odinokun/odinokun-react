@@ -6,8 +6,7 @@ import {ReactComponent as LinkIcon} from "../../assets/img/icons/link.svg";
 
 import s from './work-item.module.scss';
 
-
-function WorkItem({src, alt, link, linkTitle, title, dateTime, dateTimeTitle}) {
+function WorkItem({src, alt, link, linkTitle, title, dateTime, dateTimeTitle, badges}) {
   return (
     <div className={s.item}>
       <div className={s.img}>
@@ -33,12 +32,9 @@ function WorkItem({src, alt, link, linkTitle, title, dateTime, dateTimeTitle}) {
           <span>{linkTitle}</span>
         </a>
         <div className={s.btns}>
-          <div className={s.btn}>design</div>
-          <div className={s.btn}>pug</div>
-          <div className={s.btn}>scss</div>
-          <div className={s.btn}>js/jquery</div>
-          <div className={s.btn}>support</div>
-          <div className={s.btn}>php</div>
+          {badges.map((item, index) => (
+            <div className={s.btn} key = {`${item}_${index}`}>{item}</div>
+          ))}
         </div>
       </div>
     </div>

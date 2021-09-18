@@ -18,9 +18,10 @@ function Works(props) {
           link = {item.link}
           linkTitle = {item.linkTitle}
           title = {item.title}
-          dateTime={item.dateTime}
-          dateTimeTitle={item.dateTimeTitle}
-          key={`${item.src}_${index}`}
+          dateTime = {item.dateTime}
+          dateTimeTitle = {item.dateTimeTitle}
+          badges = {item.badges}
+          key = {`${item.src}_${index}`}
         />
         ))}
       </div>
