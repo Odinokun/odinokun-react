@@ -6,15 +6,6 @@
   background-color: $dark;
 }
 
-.map {
-  min-height: 100vh;
-
-  .gmnoprint,
-  .gm-fullscreen-control {
-    display: none;
-  }
-}
-
 .item {
   position: absolute;
   z-index: 1;

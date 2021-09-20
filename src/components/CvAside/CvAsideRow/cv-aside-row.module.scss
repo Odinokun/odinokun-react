@@ -1,0 +1,25 @@
+@import './src/assets/styles/core/mixins';
+
+.row {
+  font-size: 19px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin-bottom: 15px;
+
+  @include min(580) {
+    flex-direction: row;
+  }
+}
+
+.title {
+  display: inline-block;
+  flex: none;
+  width: 125px;
+  padding-right: 10px;
+}
+
+.descr {
+  font-weight: 400;
+  display: inline-block;
+}

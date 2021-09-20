@@ -6,10 +6,12 @@ import MainWrap from "./layouts/MainWrap/MainWrap";
 import Main from "./layouts/Main/Main";
 
 import 'normalize.css'
+import Burger from "./components/Burger/Burger";
 
 function App() {
   return (
     <MainWrap>
+      <Burger/>
       <Aside/>
       <Main>
         <Switch>

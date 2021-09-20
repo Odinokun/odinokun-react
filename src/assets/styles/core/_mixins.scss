@@ -4,12 +4,6 @@
   }
 }
 
-@mixin print() {
-  @media print {
-    @content;
-  }
-}
-
 // =====  =====
 // ===== OLD MIXINS =====
 // =====  =====

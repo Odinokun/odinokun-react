@@ -28,10 +28,6 @@
     border-right: 1px solid $light;
   }
 
-  @include print {
-    display: none;
-  }
-
   &.active {
     transform: translateX(0);
   }

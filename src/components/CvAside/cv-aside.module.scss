@@ -1,0 +1,68 @@
+@import './src/assets/styles/core/variables';
+@import './src/assets/styles/core/mixins';
+
+.aside {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex: none;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 30px;
+  margin-bottom: 50px;
+  padding: 40px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: $box-shadow;
+
+  @include min(1100) {
+    width: 370px;
+    padding: 0 0 50px 0;
+  }
+}
+
+.ava {
+  width: 100%;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  @include min(500) {
+    max-width: 300px;
+  }
+
+  @include min(1100) {
+    max-width: 100%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.info {
+  width: 100%;
+
+  @include min(1100) {
+    padding: 0 35px;
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 15px;
+
+  svg {
+    fill: $dark;
+    width: 30px;
+    height: 25px;
+    margin: 15px;
+    transition: fill .5s;
+
+    &:hover {
+      fill: $highlight;
+    }
+  }
+}

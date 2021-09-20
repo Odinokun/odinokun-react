@@ -58,7 +58,7 @@ svg {
   overflow: visible;
 }
 
-////изменяем цвет выделения текста мышью
+//изменяем цвет выделения текста мышью
 ::selection {
   color: $dark;
   background-color: $highlight;
@@ -83,3 +83,8 @@ svg {
 //  padding-right: 2px;
 //  color: $highlight;
 //}
+
+.gmnoprint,
+.gm-fullscreen-control {
+  display: none !important;
+}

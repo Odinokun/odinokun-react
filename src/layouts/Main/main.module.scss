@@ -4,8 +4,4 @@
   @include min(500) {
     margin-left: 90px;
   }
-
-  @include print() {
-    margin-left: 0;
-  }
 }

@@ -1,12 +1,14 @@
 import React from 'react';
 
+import s from "./burger.module.scss";
+
 function Burger(props) {
   return (
-    <div className="burger" id="burger">
-      <div className="burger__line burger__line--top"></div>
-      <div className="burger__line burger__line--middle-01"></div>
-      <div className="burger__line burger__line--middle-02"></div>
-      <div className="burger__line burger__line--bottom"></div>
+    <div className={s.burger}>
+      <div className={`${s.line} ${s.line__top}`}></div>
+      <div className={`${s.line} ${s.line__middle_01}`}></div>
+      <div className={`${s.line} ${s.line__middle_02}`}></div>
+      <div className={`${s.line} ${s.line__bottom}`}></div>
     </div>
   );
 }

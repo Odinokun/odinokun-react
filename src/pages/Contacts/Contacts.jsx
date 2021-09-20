@@ -2,6 +2,7 @@ import React from 'react';
 
 import PageTitle from "../../components/PageTitle/PageTitle";
 import Button from "../../components/Button/Button";
+import GoogleMap from "../../components/GoogleMap/GoogleMap";
 
 import s from './contacts.module.scss';
 
@@ -13,7 +14,7 @@ import {ReactComponent as Telegram} from "../../assets/img/icons/telegram.svg";
 function Contacts(props) {
   return (
     <div className={s.contacts}>
-      <div className={s.map} id="contacts-map"></div>
+      <GoogleMap/>
 
       <div className={s.item}>
 
