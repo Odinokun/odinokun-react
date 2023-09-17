@@ -1,11 +1,16 @@
 import { FC } from 'react';
+import { ThemeProvider } from '@mui/material';
 
-interface IProps {}
+import { LinkButton } from './common/components/LinkButton/LinkButton';
 
-export const App: FC<IProps> = () => {
+import { theme } from './theme/theme';
+
+export const App: FC = () => {
   return (
-    <div>
-      <h1>App</h1>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div>
+        <LinkButton href='/' title='Download CV' btnColor='dark' />
+      </div>
+    </ThemeProvider>
   );
 };
