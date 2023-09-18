@@ -4,7 +4,7 @@ export enum ROUTES {
   HOME = '/',
   CV = 'cv',
   WORKS = 'works',
-  BLOG = 'team',
+  BLOG = 'blog',
   CONTACTS = 'contacts',
   NOT_FOUND = '*',
 }

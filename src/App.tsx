@@ -1,16 +1,13 @@
 import { FC } from 'react';
-import { ThemeProvider } from '@mui/material';
+import { RouterProvider } from 'react-router-dom';
 
-import { LinkButton } from './common/components/LinkButton/LinkButton';
-
-import { theme } from './theme/theme';
+import { Providers } from '@common/components/Providers/Providers';
+import { router } from '@routes/router';
 
 export const App: FC = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <div>
-        <LinkButton href='/' title='Download CV' btncolor='dark' />
-      </div>
-    </ThemeProvider>
+    <Providers>
+      <RouterProvider router={router} />
+    </Providers>
   );
 };

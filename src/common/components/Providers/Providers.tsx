@@ -1,4 +1,5 @@
 import { FC, ReactNode } from 'react';
+import { HelmetProvider } from 'react-helmet-async';
 import { ThemeProvider } from '@mui/material';
 import { theme } from '@theme/theme';
 
@@ -7,5 +8,9 @@ interface IProps {
 }
 
 export const Providers: FC<IProps> = ({ children }) => {
-  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
+  return (
+    <HelmetProvider>
+      <ThemeProvider theme={theme}>{children}</ThemeProvider>
+    </HelmetProvider>
+  );
 };
