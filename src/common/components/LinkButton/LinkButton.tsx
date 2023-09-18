@@ -4,15 +4,15 @@ import { StyledLink, StyledLinkWrapper } from './LinkButton.styles';
 interface IProps {
   href: string;
   title: string;
-  btnColor: 'light' | 'dark';
+  btncolor: 'light' | 'dark';
   target?: string;
   rel?: string;
 }
 
-export const LinkButton: FC<IProps> = ({ href, title, btnColor }) => {
+export const LinkButton: FC<IProps> = ({ href, title, btncolor }) => {
   return (
-    <StyledLinkWrapper btnColor={btnColor}>
-      <StyledLink href={href} variant='button' btnColor={btnColor}>
+    <StyledLinkWrapper btncolor={btncolor}>
+      <StyledLink href={href} variant='button' btncolor={btncolor}>
         {title}
       </StyledLink>
     </StyledLinkWrapper>

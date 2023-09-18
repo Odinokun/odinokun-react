@@ -1,15 +1,15 @@
 import { styled } from '@mui/material/styles';
 import { Link, Box } from '@mui/material';
 
-export const StyledLinkWrapper = styled(Box)<{ btnColor: 'light' | 'dark' }>(
-  ({ btnColor }) => `
+export const StyledLinkWrapper = styled(Box)<{ btncolor: 'light' | 'dark' }>(
+  ({ btncolor }) => `
   position: relative;
   padding: 0;
-  border-left: 2px solid ${btnColor === 'light' ? '#fdf9f3' : '#1e1e1e'};
-  border-right: 2px solid ${btnColor === 'light' ? '#fdf9f3' : '#1e1e1e'};
+  border-left: 2px solid ${btncolor === 'light' ? '#fdf9f3' : '#1e1e1e'};
+  border-right: 2px solid ${btncolor === 'light' ? '#fdf9f3' : '#1e1e1e'};
   border-top: none;
   border-bottom: none;
-  color: ${btnColor === 'light' ? '#fdf9f3' : '#1e1e1e'};
+  color: ${btncolor === 'light' ? '#fdf9f3' : '#1e1e1e'};
   display: inline-flex;
   flex-direction: column;
   align-items: stretch;
@@ -21,7 +21,7 @@ export const StyledLinkWrapper = styled(Box)<{ btnColor: 'light' | 'dark' }>(
     top: 0;
     height: 2px;
     width: 60%;
-    background-color: ${btnColor === 'light' ? '#fdf9f3' : '#1e1e1e'};
+    background-color: ${btncolor === 'light' ? '#fdf9f3' : '#1e1e1e'};
     transition: all 0.5s;
   }
 
@@ -36,8 +36,8 @@ export const StyledLinkWrapper = styled(Box)<{ btnColor: 'light' | 'dark' }>(
   &:hover {
     border-top: none;
     border-bottom: none;
-    border-left: 2px solid ${btnColor === 'light' ? '#fdf9f3' : '#1e1e1e'};
-    border-right: 2px solid ${btnColor === 'light' ? '#fdf9f3' : '#1e1e1e'};
+    border-left: 2px solid ${btncolor === 'light' ? '#fdf9f3' : '#1e1e1e'};
+    border-right: 2px solid ${btncolor === 'light' ? '#fdf9f3' : '#1e1e1e'};
     &:before,
     &:after {
       width: 10px;
@@ -46,8 +46,8 @@ export const StyledLinkWrapper = styled(Box)<{ btnColor: 'light' | 'dark' }>(
 `
 );
 
-export const StyledLink = styled(Link)<{ btnColor: 'light' | 'dark' }>(
-  ({ btnColor }) => `
+export const StyledLink = styled(Link)<{ btncolor: 'light' | 'dark' }>(
+  ({ btncolor }) => `
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +57,7 @@ export const StyledLink = styled(Link)<{ btnColor: 'light' | 'dark' }>(
   user-select: none;
   text-decoration: none;
   white-space: nowrap;
-  color: ${btnColor === 'light' ? '#fdf9f3' : '#1e1e1e'};
+  color: ${btncolor === 'light' ? '#fdf9f3' : '#1e1e1e'};
   transition: all 0.5s;
 
   &:before,
@@ -67,7 +67,7 @@ export const StyledLink = styled(Link)<{ btnColor: 'light' | 'dark' }>(
     bottom: 0;
     height: 2px;
     width: 60%;
-    background-color: ${btnColor === 'light' ? '#fdf9f3' : '#1e1e1e'};
+    background-color: ${btncolor === 'light' ? '#fdf9f3' : '#1e1e1e'};
     transition: all 0.5s;
   }
 

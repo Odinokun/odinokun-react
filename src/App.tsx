@@ -9,7 +9,7 @@ export const App: FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <div>
-        <LinkButton href='/' title='Download CV' btnColor='dark' />
+        <LinkButton href='/' title='Download CV' btncolor='dark' />
       </div>
     </ThemeProvider>
   );
