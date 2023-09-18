@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "main": {
+      "title": "Metame",
+      "description": "Metame"
+    },
+    "lofi": {
+      "title": "Lofi",
+      "description": "Lofi"
+    },
+    "game": {
+      "title": "Game",
+      "description": "Game"
+    },
+    "wordle": {
+      "title": "Wordle",
+      "description": "Wordle"
+    },
+    "mint": {
+      "title": "Mint",
+      "description": "Mint"
+    },
+    "art": {
+      "title": "Proof of Art",
+      "description": "Proof of Art"
+    },
+    "bridge": {
+      "title": "Bridge",
+      "description": "Bridge"
+    },
+    "claim": {
+      "title": "Card Claim",
+      "description": "Card Claim"
+    },
+    "team": {
+      "title": "Team",
+      "description": "Team"
+    },
+    "builder": {
+      "title": "Card Builder",
+      "description": "Card Builder"
+    },
+    "notFound": {
+      "title": "Page not found",
+      "description": "Page doesn't exist"
+    }
+  },
+  "layout": {
+    "nav": {
+      "main": "Main",
+      "lofi": "Lofi",
+      "game": "Game",
+      "wordle": "Wordle",
+      "mint": "Mint",
+      "art": "Art",
+      "bridge": "Bridge",
+      "claim": "Claim",
+      "team": "Team",
+      "builder": "Card Builder",
+      "wallet": "Wallet"
+    },
+    "footer": {}
+  },
+  "not_found": {
+    "message": "Sorry, this page does not exist",
+    "redirect": "You will be redirected to home page in 5 seconds"
+  },
+  "errorMessages": {}
+}
