@@ -1,44 +1,24 @@
 {
   "meta": {
-    "main": {
-      "title": "Metame",
-      "description": "Metame"
+    "home": {
+      "title": "Odinokun - Home",
+      "description": "Odinokun - Home"
     },
-    "lofi": {
-      "title": "Lofi",
-      "description": "Lofi"
+    "cv": {
+      "title": "CV - Odinokun",
+      "description": "CV - Odinokun"
     },
-    "game": {
-      "title": "Game",
-      "description": "Game"
+    "works": {
+      "title": "Works - Odinokun",
+      "description": "Works - Odinokun"
     },
-    "wordle": {
-      "title": "Wordle",
-      "description": "Wordle"
+    "blog": {
+      "title": "Blog - Odinokun",
+      "description": "Blog - Odinokun"
     },
-    "mint": {
-      "title": "Mint",
-      "description": "Mint"
-    },
-    "art": {
-      "title": "Proof of Art",
-      "description": "Proof of Art"
-    },
-    "bridge": {
-      "title": "Bridge",
-      "description": "Bridge"
-    },
-    "claim": {
-      "title": "Card Claim",
-      "description": "Card Claim"
-    },
-    "team": {
-      "title": "Team",
-      "description": "Team"
-    },
-    "builder": {
-      "title": "Card Builder",
-      "description": "Card Builder"
+    "contacts": {
+      "title": "Contacts - Odinokun",
+      "description": "Contacts - Odinokun"
     },
     "notFound": {
       "title": "Page not found",
@@ -47,17 +27,11 @@
   },
   "layout": {
     "nav": {
-      "main": "Main",
-      "lofi": "Lofi",
-      "game": "Game",
-      "wordle": "Wordle",
-      "mint": "Mint",
-      "art": "Art",
-      "bridge": "Bridge",
-      "claim": "Claim",
-      "team": "Team",
-      "builder": "Card Builder",
-      "wallet": "Wallet"
+      "home": "Home",
+      "cv": "CV",
+      "works": "Works",
+      "blog": "Blog",
+      "contacts": "Contacts"
     },
     "footer": {}
   },
