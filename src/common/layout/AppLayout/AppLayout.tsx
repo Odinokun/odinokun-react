@@ -1,6 +1,7 @@
 import { FC, DetailedHTMLProps, HTMLAttributes, Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 import { AppNav } from '../AppNav/AppNav';
+import { AppLayoutPageWrapper, AppLayoutWrapper } from '@common/layout/AppLayout/AppLayout.styles.ts';
 
 type AppLayoutProps = DetailedHTMLProps<
   HTMLAttributes<HTMLDivElement>,
@@ -8,14 +9,15 @@ type AppLayoutProps = DetailedHTMLProps<
 >;
 
 const AppLayout: FC<AppLayoutProps> = () => (
-  <div>
+  <AppLayoutWrapper>
     <AppNav />
-    <div>
+    
+    <AppLayoutPageWrapper>
       <Suspense>
         <Outlet />
       </Suspense>
-    </div>
-  </div>
+    </AppLayoutPageWrapper>
+  </AppLayoutWrapper>
 );
 
 export default AppLayout;

@@ -1,12 +1,13 @@
 import { FC } from 'react';
 import { NavLink } from 'react-router-dom';
+import { AppNavWrapper } from '@common/layout/AppNav/AppNav.styled.ts';
 
 interface IProps {}
 
 export const AppNav: FC<IProps> = () => {
   return (
-    <div>
-      <h1>AppNav</h1>
+    <AppNavWrapper>
+      {/*<h1>AppNav</h1>*/}
       <ul>
         <li>
           <NavLink to='/'>Home</NavLink>
@@ -24,6 +25,6 @@ export const AppNav: FC<IProps> = () => {
           <NavLink to='/contacts'>Contacts</NavLink>
         </li>
       </ul>
-    </div>
+    </AppNavWrapper>
   );
 };
