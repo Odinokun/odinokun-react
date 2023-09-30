@@ -1,11 +1,13 @@
 import { FC } from 'react';
+import {  HomeWrapper } from '@modules/Home/Home.styled.ts';
+import { HomeBg } from '@modules/Home/HomeBg/HomeBg.tsx';
 
 interface IProps {}
 
 export const Home: FC<IProps> = () => {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <HomeWrapper>
+      <HomeBg />
+    </HomeWrapper>
   );
 };
