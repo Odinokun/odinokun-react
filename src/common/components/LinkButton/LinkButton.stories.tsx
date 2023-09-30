@@ -6,8 +6,8 @@ export default {
 };
 
 export const BaseLinkButton = () => (
-  <LinkButton href='/' title='Download CV' btncolor='light' />
+  <LinkButton href='/' title='Download CV' btnColor='light' />
 );
 export const DarkLinkButton = () => (
-  <LinkButton href='/' title='Download CV' btncolor='dark' />
+  <LinkButton href='/' title='Download CV' btnColor='dark' />
 );
