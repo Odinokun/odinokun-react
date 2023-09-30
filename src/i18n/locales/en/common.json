@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "home": {
+      "title": "Odinokun - Home",
+      "description": "Odinokun - Home"
+    },
+    "cv": {
+      "title": "CV - Odinokun",
+      "description": "CV - Odinokun"
+    },
+    "works": {
+      "title": "Works - Odinokun",
+      "description": "Works - Odinokun"
+    },
+    "blog": {
+      "title": "Blog - Odinokun",
+      "description": "Blog - Odinokun"
+    },
+    "contacts": {
+      "title": "Contacts - Odinokun",
+      "description": "Contacts - Odinokun"
+    },
+    "notFound": {
+      "title": "Page not found",
+      "description": "Page doesn't exist"
+    }
+  },
+  "layout": {
+    "nav": {
+      "home": "Home",
+      "cv": "CV",
+      "works": "Works",
+      "blog": "Blog",
+      "contacts": "Contacts"
+    },
+    "footer": {}
+  },
+  "not_found": {
+    "message": "Sorry, this page does not exist",
+    "redirect": "You will be redirected to home page in 5 seconds"
+  },
+  "errorMessages": {}
+}
