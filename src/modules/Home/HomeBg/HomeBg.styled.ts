@@ -1,6 +1,18 @@
 import { keyframes, styled } from '@mui/material/styles';
 import { Box } from '@mui/material';
 
+const fadeOut = keyframes`
+  0% {
+    opacity: .3;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .1;
+  }
+`;
+
 const leftToCenter = keyframes`
   0% {
     transform: translateX(-100vw);
@@ -45,16 +57,16 @@ export const HomeBgWrapper = styled(Box)`
     height: 90vh;
     margin: auto;
     display: block;
-    opacity: .08;
+    //opacity: .1;
 
     &:first-child {
       transform: translateX(-100vw);
-      animation: 1s ${leftToCenter} ease-in-out .2s forwards;
+      animation: 1s ${leftToCenter} ease-in-out .2s forwards, 1.5s ${fadeOut} ease-in-out .2s forwards;
     }
 
     &:last-child {
       transform: translateX(100vw);
-      animation: 1s ${rightToCenter} ease-in-out .2s forwards;
+      animation: 1s ${rightToCenter} ease-in-out .2s forwards, 1.5s ${fadeOut} ease-in-out .2s forwards;
     }
   }
 `;

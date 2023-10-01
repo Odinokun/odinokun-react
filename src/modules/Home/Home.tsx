@@ -16,7 +16,7 @@ export const Home: FC<IProps> = () => {
         <HomeTitle variant="h1">Dima Hordiienko</HomeTitle>
         <HomeSubtitle variant="h2">front-end developer</HomeSubtitle>
         <HomeButton>
-          <LinkButton href="/" target="_blank" title="Download CV" btnColor="light" />
+          <LinkButton href="https://www.google.com/" target="_blank" title="Download CV" btnColor="light" />
         </HomeButton>
       </HomeContent>
     </HomeWrapper>
