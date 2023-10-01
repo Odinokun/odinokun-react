@@ -9,10 +9,16 @@ interface IProps {
   rel?: string;
 }
 
-export const LinkButton: FC<IProps> = ({ href, title, btnColor }) => {
+export const LinkButton: FC<IProps> = ({
+  href,
+  title,
+  btnColor,
+  target,
+  rel,
+}) => {
   return (
     <StyledLinkWrapper btnColor={btnColor}>
-      <StyledLink href={href} variant='button' btnColor={btnColor}>
+      <StyledLink href={href} variant="button" btnColor={btnColor} target={target} rel={rel}>
         {title}
       </StyledLink>
     </StyledLinkWrapper>
