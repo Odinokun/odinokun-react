@@ -1,6 +1,18 @@
 import { keyframes, styled } from '@mui/material/styles';
 import { Box } from '@mui/material';
 
+const fadeOut = keyframes`
+  0% {
+    opacity: .3;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .1;
+  }
+`;
+
 const leftToCenter = keyframes`
   0% {
     transform: translateX(-100vw);

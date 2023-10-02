@@ -32,7 +32,7 @@ export const HomeTitle = styled(Typography)`
   line-height: 1;
   margin-bottom: 0;
   user-select: none;
-  animation: .7s ${fadeIn} ease 1s forwards;
+  animation: 1.1s ${fadeIn} ease 1.8s forwards;
   letter-spacing: 3px;
   opacity: 0;
   color: ${({ theme }) => theme.palette.common.white};
@@ -47,7 +47,7 @@ export const HomeSubtitle = styled(Typography)`
   font-size: 5vw !important;
   margin-bottom: 50px;
   user-select: none;
-  animation: .7s ${fadeIn} ease 1.15s forwards;
+  animation: 1.1s ${fadeIn} ease 2s forwards;
   text-align: center;
   opacity: 0;
   color: ${({ theme }) => theme.palette.common.white};
@@ -60,6 +60,6 @@ export const HomeSubtitle = styled(Typography)`
 export const HomeButton = styled(Box)`
   display: flex;
   justify-content: center;
-  animation: .7s ${fadeIn} ease 1.3s forwards;
+  animation: 1.1s ${fadeIn} ease 2.2s forwards;
   opacity: 0;
 `;
