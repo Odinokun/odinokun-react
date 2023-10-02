@@ -6,11 +6,10 @@ export const AppLayoutWrapper = styled(Box)`
   flex-direction: column;
   min-height: 100vh;
   padding-left: 90px;
-  background-color: #a6e22e;
+  background-color: ${({theme}) => theme.palette.background.default};
 `;
 
 export const AppLayoutPageWrapper = styled(Box)`
-  background-color: #fd971f;
   flex-grow: 1;
   display: flex;
   flex-direction: column;

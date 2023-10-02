@@ -1,17 +1,21 @@
-import { PaletteOptions } from '@mui/material';
+import { PaletteOptions } from '@mui/material/';
+
+const darkColor = '#1e1e1e';
+const lightColor = '#fdfdfd';
+const highlightColor = '#ffb100';
 
 export const palette: PaletteOptions = {
-  mode: 'light',
+  // mode: 'light',
   common: {
-    black: '#1e1e1e',
-    white: '#fdf9f3',
+    black: darkColor,
+    white: lightColor,
   },
-  // primary: {},
-  // secondary: {},
-  // info: {},
-  // success: {},
-  // warning: {},
-  // error: {},
-  // background: {},
-  // text: {},
+  text: {
+    primary: darkColor,
+    secondary: highlightColor,
+  },
+  background: {
+    default: darkColor,
+    paper: lightColor,
+  },
 };

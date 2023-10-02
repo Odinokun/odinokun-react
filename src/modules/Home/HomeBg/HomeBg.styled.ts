@@ -43,30 +43,30 @@ export const HomeBgWrapper = styled(Box)`
   margin: auto;
   overflow: hidden;
   pointer-events: none;
+`;
 
-  svg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    fill: transparent;
-    stroke-width: 70px;
-    stroke: ${({ theme }) => theme.palette.common.white};
-    max-width: calc(50% - 30px);
-    height: 90vh;
-    margin: auto;
-    display: block;
-    //opacity: .1;
+export const HomeBgSvgLetter = styled('svg')`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  fill: transparent;
+  stroke-width: 70px;
+  stroke: ${({ theme }) => theme.palette.common.white};
+  max-width: calc(50% - 30px);
+  height: 90vh;
+  margin: auto;
+  display: block;
+  opacity: .08;
 
-    &:first-child {
-      transform: translateX(-100vw);
-      animation: 1s ${leftToCenter} ease-in-out .2s forwards, 1.5s ${fadeOut} ease-in-out .2s forwards;
-    }
+  &:first-child {
+    transform: translateX(-100vw);
+    animation: 1s ${leftToCenter} ease-in-out .2s forwards;
+  }
 
-    &:last-child {
-      transform: translateX(100vw);
-      animation: 1s ${rightToCenter} ease-in-out .2s forwards, 1.5s ${fadeOut} ease-in-out .2s forwards;
-    }
+  &:last-child {
+    transform: translateX(100vw);
+    animation: 1s ${rightToCenter} ease-in-out .2s forwards;
   }
 `;
