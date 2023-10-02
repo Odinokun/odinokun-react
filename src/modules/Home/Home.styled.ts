@@ -15,7 +15,7 @@ export const HomeWrapper = styled(Box)`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${({theme}) => theme.palette.common.black};
+  background-color: ${({theme}) => theme.palette.background.default};
   min-height: 100vh;
 `;
 

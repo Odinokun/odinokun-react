@@ -13,6 +13,6 @@ export const AppNavWrapper = styled(Box)`
   width: 90px;
   height: 100vh;
   padding-top: 25px;
-  background-color: ${({ theme }) => theme.palette.common.black};
+  background-color: ${({ theme }) => theme.palette.background.default};
   border-right: 1px solid ${({ theme }) => theme.palette.common.white};
 `;
