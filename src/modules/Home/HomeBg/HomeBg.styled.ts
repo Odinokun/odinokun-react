@@ -62,11 +62,11 @@ export const HomeBgSvgLetter = styled('svg')`
 
   &:first-child {
     transform: translateX(-100vw);
-    animation: 1s ${leftToCenter} ease-in-out .2s forwards;
+    animation: 1s ${leftToCenter} ease-in-out .2s forwards, 1.5s ${fadeOut} ease-in-out .2s forwards;
   }
 
   &:last-child {
     transform: translateX(100vw);
-    animation: 1s ${rightToCenter} ease-in-out .2s forwards;
+    animation: 1s ${rightToCenter} ease-in-out .2s forwards, 1.5s ${fadeOut} ease-in-out .2s forwards;
   }
 `;
