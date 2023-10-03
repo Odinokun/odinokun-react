@@ -1,30 +1,25 @@
 import { FC } from 'react';
-import { NavLink } from 'react-router-dom';
-import { AppNavWrapper } from '@common/layout/AppNav/AppNav.styled.ts';
+import { Menu } from '@common/components/Menu/Menu.tsx';
 
-interface IProps {}
+import { AppNavLogo, AppNavLogoLetter, AppNavWrapper } from '@common/layout/AppNav/AppNav.styled.ts';
+
+interface IProps {
+}
 
 export const AppNav: FC<IProps> = () => {
   return (
     <AppNavWrapper>
-      {/*<h1>AppNav</h1>*/}
-      <ul>
-        <li>
-          <NavLink to='/'>Home</NavLink>
-        </li>
-        <li>
-          <NavLink to='/cv'>CV</NavLink>
-        </li>
-        <li>
-          <NavLink to='/works'>Works</NavLink>
-        </li>
-        <li>
-          <NavLink to='/blog'>Blog</NavLink>
-        </li>
-        <li>
-          <NavLink to='/contacts'>Contacts</NavLink>
-        </li>
-      </ul>
+      <AppNavLogo to={'/'}>
+        <AppNavLogoLetter viewBox="0 0 240 770" strokeWidth="70px" fill="transparent">
+          <polyline points="0,35 150,35 205,80 205,690 150,735 35,735 35,0" />
+        </AppNavLogoLetter>
+        <AppNavLogoLetter viewBox="0 0 240 770" strokeWidth="70px" fill="transparent">
+          <polyline points="35,63 35,770 35,500 205,460 205,705 205,0" />
+        </AppNavLogoLetter>
+      </AppNavLogo>
+      
+      <Menu />
+
     </AppNavWrapper>
   );
 };

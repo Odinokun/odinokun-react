@@ -3,7 +3,13 @@ import { FC } from 'react';
 import { HomeBg } from '@modules/Home/HomeBg/HomeBg.tsx';
 import { LinkButton } from '@common/components/LinkButton/LinkButton.tsx';
 
-import { HomeButton, HomeContent, HomeSubtitle, HomeTitle, HomeWrapper } from '@modules/Home/Home.styled.ts';
+import {
+  HomeButton,
+  HomeContent,
+  HomeSubtitle,
+  HomeTitle,
+  HomeWrapper,
+} from '@modules/Home/Home.styled.ts';
 
 interface IProps {
 }
