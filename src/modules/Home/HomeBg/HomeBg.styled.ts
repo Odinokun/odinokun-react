@@ -60,12 +60,12 @@ export const HomeBgSvgLetter = styled('svg')`
   display: block;
   opacity: .08;
 
-  &:first-child {
+  &:nth-of-type(1) {
     transform: translateX(-100vw);
     animation: 1s ${leftToCenter} ease-in-out .2s forwards, 1.5s ${fadeOut} ease-in-out .2s forwards;
   }
 
-  &:last-child {
+  &:nth-of-type(2) {
     transform: translateX(100vw);
     animation: 1s ${rightToCenter} ease-in-out .2s forwards, 1.5s ${fadeOut} ease-in-out .2s forwards;
   }
