@@ -5,7 +5,6 @@ export const AppLayoutWrapper = styled(Box)`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: ${({ theme }) => theme.palette.background.default};
 
   @media (min-width: ${({ theme }) => theme.breakpoints.values.md}px) {
     padding-left: 90px;
