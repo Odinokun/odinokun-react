@@ -20,6 +20,10 @@ export const PageTitleTypography = styled(Typography)`
   color: ${({ theme }) => theme.palette.text.primary};
   
   @media (min-width: ${({ theme }) => theme.breakpoints.values.xs}px) {
+    font-size: 44px;
+  }
+  
+  @media (min-width: ${({ theme }) => theme.breakpoints.values.sm}px) {
     font-size: 60px;
   }
 
