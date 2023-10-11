@@ -6,7 +6,7 @@ export const components = {
         paddingRight: '20px',
         
         '@media (min-width:768px)': {
-          maxWidth: '1400px',
+          maxWidth: '1600px',
           paddingLeft: '50px ',
           paddingRight: '50px',
         },
