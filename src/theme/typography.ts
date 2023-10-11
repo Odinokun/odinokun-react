@@ -13,6 +13,7 @@ export const typography: TypographyOptions = {
   },
   h4: {
     fontFamily: ['Oswald', 'sans-serif'].join(','),
+    marginBottom: '20px',
   },
   h5: {
     fontFamily: ['Oswald', 'sans-serif'].join(','),
