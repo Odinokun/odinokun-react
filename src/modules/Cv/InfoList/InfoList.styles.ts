@@ -15,13 +15,11 @@ export const InfoListItem = styled(ListItem)`
 export const InfoListTitle = styled(Typography)`
   width: 125px;
   flex: none;
-  font-size: 20px;
-  font-weight: 300;
   padding-right: 10px;
 `;
 
 export const InfoListValue = styled(Typography)`
-  font-size: 20px;
+  font-weight: 400;
 `;
 
 export const InfoListLink = styled(Link)`
