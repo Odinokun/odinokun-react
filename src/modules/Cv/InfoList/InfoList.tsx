@@ -10,14 +10,21 @@ import {
 export const InfoList = () => {
   return (
     <InfoListEl>
-      {cv_info_list.map(item => {
+      {cv_info_list.map(({
+        id,
+        title,
+        value,
+        link,
+        target,
+        rel,
+      }) => {
         return (
-          <InfoListItem key={item.id}>
-            <InfoListTitle>{item.title}</InfoListTitle>
+          <InfoListItem key={id}>
+            <InfoListTitle>{title}</InfoListTitle>
             {
-              !item.link ?
-                <InfoListValue>{item.value}</InfoListValue> :
-                <InfoListLink href={item.link} target={item?.target}>{item.value}</InfoListLink>
+              link ?
+                <InfoListLink href={link} target={target} rel={rel}>{value}</InfoListLink> :
+                <InfoListValue>{value}</InfoListValue>
             }
           </InfoListItem>
         );
