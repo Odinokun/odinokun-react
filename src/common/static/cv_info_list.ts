@@ -6,6 +6,7 @@ interface ICvInfoList {
   value: string;
   link: string | null;
   target?: string;
+  rel?: string;
 }
 
 export const cv_info_list: ICvInfoList[] = [
@@ -50,11 +51,13 @@ export const cv_info_list: ICvInfoList[] = [
     value: 'LinkedIn',
     link: 'https://www.linkedin.com/in/dmitry-gordienko/',
     target: '_blank',
+    rel: 'noreferrer noopener nofollow',
   }, {
     id: v1(),
     title: '',
     value: 'GitHub',
     link: 'https://github.com/Odinokun',
     target: '_blank',
+    rel: 'noreferrer noopener nofollow',
   },
 ];
