@@ -5,7 +5,13 @@ export const CvAvaWrapper = styled(Box)`
   width: 100%;
   height: 100%;
   aspect-ratio: 1/1;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  max-width: 450px;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.values.lg}px) {
+    margin: 0 0 30px 0;
+    max-width: 100%;
+  }
 `;
 
 export const CvAvaImg = styled('img')`
