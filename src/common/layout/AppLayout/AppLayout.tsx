@@ -1,7 +1,9 @@
 import { FC, DetailedHTMLProps, HTMLAttributes, Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
+
 import { AppNav } from '../AppNav/AppNav';
-import { AppLayoutPageWrapper, AppLayoutWrapper } from '@common/layout/AppLayout/AppLayout.styles.ts';
+
+import { AppLayoutPageWrapper, AppLayoutWrapper } from './AppLayout.styles.ts';
 
 type AppLayoutProps = DetailedHTMLProps<
   HTMLAttributes<HTMLDivElement>,
