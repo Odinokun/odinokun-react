@@ -11,7 +11,6 @@ export const PageTitleWrapper = styled(Box)`
 
 export const PageTitleTypography = styled(Typography)`
   font-family: 'Kaushan Script', cursive;
-  font-size: 60px;
   font-weight: 700;
   line-height: 1;
   position: relative;
@@ -19,6 +18,10 @@ export const PageTitleTypography = styled(Typography)`
   display: inline-block;
   user-select: none;
   color: ${({ theme }) => theme.palette.text.primary};
+  
+  @media (min-width: ${({ theme }) => theme.breakpoints.values.xs}px) {
+    font-size: 60px;
+  }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.values.md}px) {
     font-size: 90px;
