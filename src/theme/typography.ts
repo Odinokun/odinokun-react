@@ -13,12 +13,20 @@ export const typography: TypographyOptions = {
   },
   h4: {
     fontFamily: ['Oswald', 'sans-serif'].join(','),
+    marginBottom: '20px',
   },
   h5: {
     fontFamily: ['Oswald', 'sans-serif'].join(','),
   },
   h6: {
     fontFamily: ['Oswald', 'sans-serif'].join(','),
+  },
+  body1: {
+    fontFamily: ['Roboto Condensed', 'sans-serif'].join(','),
+    fontSize: '20px',
+    fontWeight: 300,
+    lineHeight: 1.35,
+    letterSpacing: 0.25,
   },
   button: {
     fontFamily: ['Roboto Condensed', 'sans-serif'].join(','),

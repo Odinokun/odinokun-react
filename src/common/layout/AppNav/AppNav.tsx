@@ -1,30 +1,27 @@
-import { FC } from 'react';
-import { NavLink } from 'react-router-dom';
-import { AppNavWrapper } from '@common/layout/AppNav/AppNav.styled.ts';
+import { FC, useState } from 'react';
 
-interface IProps {}
+import { Logo } from '@common/layout/AppNav/Logo/Logo.tsx';
+import { NavMenu } from '@common/components/NavMenu/NavMenu.tsx';
 
-export const AppNav: FC<IProps> = () => {
+import { Close, Menu } from '@mui/icons-material';
+import { useWindowSize } from '@common/hooks/useWindowSize.ts';
+import { AppNavBurger, AppNavWrapper } from './AppNav.styles.ts';
+
+export const AppNav: FC = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenuHandler = () => setMenuOpen(prevState => !prevState);
+  
   return (
     <AppNavWrapper>
-      {/*<h1>AppNav</h1>*/}
-      <ul>
-        <li>
-          <NavLink to='/'>Home</NavLink>
-        </li>
-        <li>
-          <NavLink to='/cv'>CV</NavLink>
-        </li>
-        <li>
-          <NavLink to='/works'>Works</NavLink>
-        </li>
-        <li>
-          <NavLink to='/blog'>Blog</NavLink>
-        </li>
-        <li>
-          <NavLink to='/contacts'>Contacts</NavLink>
-        </li>
-      </ul>
+      <Logo />
+      <NavMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      
+      {useWindowSize().width < 768 &&
+        <AppNavBurger onClick={toggleMenuHandler}>
+          {!menuOpen ? <Menu /> : <Close />}
+        </AppNavBurger>
+      }
+    
     </AppNavWrapper>
   );
 };
