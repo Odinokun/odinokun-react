@@ -6,7 +6,13 @@ export const PageTitleWrapper = styled(Box)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 0;
+  padding: 60px 0 40px 0;
+  @media (min-width: ${({ theme }) => theme.breakpoints.values.md}px) {
+    padding: 60px 0;
+  }
+  @media (min-width: ${({ theme }) => theme.breakpoints.values.xl}px) {
+    padding: 80px 0;
+  }
 `;
 
 export const PageTitleTypography = styled(Typography)`
