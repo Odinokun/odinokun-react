@@ -1,0 +1,1 @@
+import{j as t}from"./index-1973dd08.js";import{w as a,i as s}from"./withMetadata-70ac8637.js";const e=()=>t.jsx("div",{children:t.jsx("h1",{children:"Contacts"})}),n=()=>t.jsx(e,{}),i=a({title:s.t("meta.contacts.title"),description:s.t("meta.contacts.description")})(n);export{i as ContactsPageMeta,i as default};
