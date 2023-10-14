@@ -42,7 +42,7 @@ export const Cv = () => {
           <CvRightItem>
             <Typography variant={'h4'}>Summary</Typography>
             <Typography variant={'body1'}>
-              I have worked as a front-end developer for 9+ years, since 2014.
+              I have worked as a front-end developer for 9++ years, since 2014.
             </Typography>
             <Typography variant={'body1'}>
               I have experience of working in large corporate teams and in small startups. However, despite my
