@@ -1,9 +1,9 @@
 {
   "name": "odinokun-react",
-  "homepage": "http://Odinokun.github.io/odinokun-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Odinokun.github.io/odinokun-react",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
