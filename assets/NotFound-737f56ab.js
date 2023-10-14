@@ -1,1 +1,0 @@
-import{j as t}from"./index-cb3a44cc.js";import{w as n,i as o}from"./withMetadata-f2046121.js";const e=()=>t.jsx("div",{children:t.jsx("h1",{children:"NotFound"})}),i=()=>t.jsx(e,{}),d=n({title:o.t("meta.notFound.title"),description:o.t("meta.notFound.description")})(i);export{d as NotFoundPageMeta,d as default};
