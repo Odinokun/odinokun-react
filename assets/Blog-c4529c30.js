@@ -1,0 +1,1 @@
+import{j as t}from"./index-4ff0780f.js";import{w as o,i as e}from"./withMetadata-597ffc27.js";const i=()=>t.jsx("div",{children:t.jsx("h1",{children:"Blog"})}),s=()=>t.jsx(i,{}),l=o({title:e.t("meta.blog.title"),description:e.t("meta.blog.description")})(s);export{l as BlogPageMeta,l as default};
