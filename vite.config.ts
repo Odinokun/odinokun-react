@@ -6,7 +6,6 @@ import svgr from 'vite-plugin-svgr';
 // don't forget update tsconfig.json for path aliases
 export default defineConfig({
   plugins: [react(), svgr()],
-  base: '/vite-deploy/',
   resolve: {
     alias: {
       '@assets': '/src/assets',
