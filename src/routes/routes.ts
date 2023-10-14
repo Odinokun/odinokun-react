@@ -2,10 +2,10 @@ import { lazy } from 'react';
 
 export enum ROUTES {
   HOME = '/',
-  CV = 'cv',
-  WORKS = 'works',
-  BLOG = 'blog',
-  CONTACTS = 'contacts',
+  CV = 'cv/',
+  WORKS = 'works/',
+  BLOG = 'blog/',
+  CONTACTS = 'contacts/',
   NOT_FOUND = '*',
 }
 
