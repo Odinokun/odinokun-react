@@ -2,9 +2,9 @@ import { Container, Typography } from '@mui/material';
 
 import { PageTitle } from '@common/components/PageTitle/PageTitle.tsx';
 import { SocialsList } from '@common/components/SocialsList/SocialsList.tsx';
-import { LinkButton } from '@common/components/LinkButton/LinkButton.tsx';
 import { CvAva } from '@modules/Cv/CvAva/CvAva.tsx';
 import { InfoList } from '@modules/Cv/InfoList/InfoList.tsx';
+import { MultiButton } from '@common/components/MultiButton/MultiButton.tsx';
 
 import { skillsArr } from '@common/static/skills.ts';
 import { CvGrid, CvLeftCol, CvLeftColInfo, CvRightCol, CvRightItem } from '@modules/Cv/Cv.styles.ts';
@@ -19,10 +19,11 @@ export const Cv = () => {
           <CvLeftColInfo>
             <InfoList />
             <SocialsList />
-            <LinkButton
-              href={'http://odinokun.com/assets/pdf/front-end_developer_Dima_Hordiienko_2023-CA.pdf'}
-              title={'Download cv'}
-              btncolor={'dark'}
+            <MultiButton
+              href='https://odinokun.com/public/pdf/front-end_developer_Dima_Hordiienko.pdf'
+              title='Download cv'
+              btnColor='dark'
+              target='_blank'
             />
           </CvLeftColInfo>
         </CvLeftCol>
@@ -33,7 +34,7 @@ export const Cv = () => {
             {skillsArr.map((item, index) => {
               return (
                 <Typography variant={'h6'} display={'inline'} key={index}>
-                  {item} / {' '}
+                  {index !== (skillsArr.length - 1) ? item + ' / ' : item}
                 </Typography>
               );
             })}
